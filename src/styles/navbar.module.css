@@ -1,0 +1,18 @@
+.menu {
+  width: 0;
+  min-height: 100vh;
+  background-color: #ffffff;
+  overflow: hidden;
+  transition: width 0.8s ease-in-out;
+}
+
+.menu__open {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #ffffff;
+  transition: width 0.8s ease-in-out;
+}
+
+.menuContent {
+  padding-left: 1em;
+}

@@ -16,7 +16,7 @@ export const Navbar = () => {
   return (
     <div className="w-full h-20 flex flex-col bg-white z-10">
       <article className="w-full flex items-center justify-between px-4 py-6">
-        <h1 className="font-bold uppercase">Logo</h1>
+        <h1 className="font-bold uppercase">TuNailSpa</h1>
         <button
           onClick={handledMenu}
           className={`${openMenu ? "btn__show menu__icon" : "menu__icon"}`}

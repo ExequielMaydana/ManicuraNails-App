@@ -10,10 +10,10 @@ export const CardSliderHeader = (props: Props) => {
   return (
     <article className="w-full flex h-[300px] items-center justify-between bg-slider-gradient sm:h-[350px] md:h-[400px] lg:h-[500px] lg:justify-evenly">
       <div className="flex flex-col gap-1 pl-4 lg:pl-12">
-        <h1 className="text-xl uppercase font-light sm:text-5xl lg:text-7xl">
+        <h1 className="text-3xl uppercase font-light sm:text-7xl lg:text-8xl">
           {props.title}
         </h1>
-        <p className="text-xs uppercase sm:text-sm lg:text-xl">
+        <p className="text-sm uppercase md:text-base lg:text-xl">
           {props.subtitle}
         </p>
         <button className="w-32 py-1 bg-black text-white uppercase text-sm mt-2 sm:text-base sm:w-48 lg:text-xl">

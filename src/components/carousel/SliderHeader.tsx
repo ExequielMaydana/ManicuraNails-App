@@ -15,7 +15,7 @@ export const SliderHeader = () => {
     autoplaySpeed: 3000,
   };
   return (
-    <header className="h-[330px] w-full overflow-x-hidden sm:h-[400px] md:h-[480px] lg:h-[550px] mb-16">
+    <header className="h-[330px] w-full overflow-x-hidden sm:h-[400px] md:h-[480px] lg:h-[550px] mb-12">
       <Slider {...settings}>
         {images.map((img) => (
           <CardSliderHeader

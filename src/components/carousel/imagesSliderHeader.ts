@@ -1,11 +1,11 @@
-interface Image {
+type Image = {
   id: number;
   urlImage: string;
   title: string;
   subtitle: string;
-}
+};
 
-export const images: Image[] = [
+export const data: Image[] = [
   {
     id: 1,
     urlImage: "/img_slider/depilacion.png",

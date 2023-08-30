@@ -1,8 +1,9 @@
-type Props = {};
+import { CardServices } from "./CardServices";
+import { data } from "./imagesCardServices";
 
-export const Welcome = (props: Props) => {
+export const Welcome = () => {
   return (
-    <section className="w-full mb-16">
+    <section className="w-full flex flex-col gap-8 mb-16">
       <article className="w-full flex flex-col px-8 lg:px-16">
         <h2 className="text-4xl font-light sm:text-6xl lg:text-7xl md:text-end">
           Bienvenid@ a TuNailSpa
@@ -17,6 +18,16 @@ export const Welcome = (props: Props) => {
           utilizar productos de alta calidad, respetuosos con el medio ambiente
           y libres de químicos dañinos.
         </p>
+      </article>
+      <article className="w-full flex flex-wrap gap-8 items-center justify-evenly">
+        {data.map((dat) => (
+          <CardServices
+            key={dat.id}
+            urlImage={dat.urlImage}
+            title={dat.title}
+            subtitle={dat.subtitle}
+          ></CardServices>
+        ))}
       </article>
     </section>
   );

@@ -1,4 +1,6 @@
 import { SliderHeader } from "@/components/carousel/SliderHeader";
+import { OurServices } from "@/components/our-services/OurServices";
+import { ServiceToYou } from "@/components/our-services/ServiceToYou";
 import { Navbar } from "@/components/shared/Navbar";
 import { Welcome } from "@/components/welcome/Welcome";
 import { Karla } from "next/font/google";
@@ -15,6 +17,8 @@ export default function Home() {
       <section className="flex-1">
         <SliderHeader />
         <Welcome />
+        <OurServices />
+        <ServiceToYou />
       </section>
     </main>
   );

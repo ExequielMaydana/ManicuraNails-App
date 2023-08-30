@@ -2,7 +2,7 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { images } from "./imagesSliderHeader";
+import { data } from "./imagesSliderHeader";
 import { CardSliderHeader } from "./CardSliderHeader";
 export const SliderHeader = () => {
   const settings = {
@@ -17,12 +17,12 @@ export const SliderHeader = () => {
   return (
     <header className="h-[330px] w-full overflow-x-hidden sm:h-[400px] md:h-[480px] lg:h-[550px] mb-12">
       <Slider {...settings}>
-        {images.map((img) => (
+        {data.map((dat) => (
           <CardSliderHeader
-            key={img.id}
-            urlImg={img.urlImage}
-            title={img.title}
-            subtitle={img.subtitle}
+            key={dat.id}
+            urlImg={dat.urlImage}
+            title={dat.title}
+            subtitle={dat.subtitle}
           ></CardSliderHeader>
         ))}
       </Slider>
